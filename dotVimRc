@@ -1,0 +1,52 @@
+set nocompatible
+
+call plug#begin('~/.vim/plugs')
+
+set relativenumber
+
+set noswapfile
+set nowritebackup
+set nobackup
+
+syntax on
+set virtualedit=block
+set tabstop=2
+set expandtab
+set shiftwidth=2 
+set softtabstop=2
+set nospell
+
+set ic
+set scs
+set inf
+
+set wildmode=full
+set wildignore+=*.DS_Store
+set wildignore+=*/node_modules/**
+set wildignore+=*/.ssh
+set wildignore+=*/.npm
+set wildignore+=*/.yarn
+
+set sm!
+
+set visualbell
+set t_vb=
+
+set nofoldenable
+
+set t_Co=256
+set termguicolors
+
+" Load plugins
+source ~/.vim/plugsVimRc
+
+call plug#end()
+
+" Load bindings
+source ~/.vim/bindingsVimRc
+
+syntax enable
+set background=dark
+set guifont=Fira\ Code:h15
+
+colorscheme sidonia

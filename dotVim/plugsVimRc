@@ -1,0 +1,83 @@
+Plug 'tpope/vim-sensible'
+
+Plug 'othree/html5-syntax.vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'vim-scripts/JavaScript-Indent'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+let g:jsx_ext_required = 0
+
+Plug 'tpope/vim-surround'
+
+Plug 'mileszs/ack.vim'
+
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
+Plug 'matze/vim-move'
+let g:move_key_modifier='C'
+
+Plug 'tpope/vim-markdown'
+
+Plug 'scrooloose/nerdtree'
+autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif
+let g:NERDTreeDirArrows = 1
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeShowBookmarks = 1
+let g:NERDChristmasTree = 0
+
+hi def link NERDTreeRO Normal
+hi def link NERDTreePart StatusLine
+hi def link NERDTreeDirSlash Directory
+hi def link NERDTreeCurrentNode Search
+hi def link NERDTreeCWD Normal
+
+Plug 'jistr/vim-nerdtree-tabs'
+let g:nerdtree_tabs_focus_on_files = 1
+let g:nerdtree_tabs_open_on_gui_startup = 0
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline_powerline_fonts = 1
+let g:airline_skip_empty_sections = 1
+let g:airline#extensions#branch#enabled=0
+set laststatus=2
+
+Plug 'scrooloose/syntastic'
+
+Plug 'ctrlpvim/ctrlp.vim'
+set splitright
+let g:ctrlp_switch_buffer = "ETVH"
+let g:ctrlp_map = "<C-p>"
+
+let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_working_path_mode = 'a'
+let g:ctrlp_match_window_bottom = 1
+let g:ctrlp_match_window = 'bottom,order:btt,min:13,max:13'
+let g:ctrlp_use_caching = 1
+let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_mruf_max = 250
+let g:ctrlp_max_depth = 40
+let g:ctrlp_max_files = 0
+
+let g:ctrlp_prompt_mappings = {
+          \ 'CreateNewFile()':      [''],
+          \ 'ToggleType(1)':        ['<c-u>', '<c-up>'],
+          \ 'ToggleType(-1)':       ['<c-y>', '<c-down>'],
+          \ 'PrtCurLeft()':         ['<c-b>', '<left>', '<c-^>'],
+          \ 'PrtCurRight()':        ['<c-f>', '<right>'],
+          \ 'AcceptSelection("e")': ['<c-t>'],
+          \ 'AcceptSelection("h")': ['<c-v>'],
+          \ 'AcceptSelection("v")': ['<c-s>'],
+          \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+          \ 'PrtClearCache()':      ['<D-C>'],
+          \ 'PrtDeleteEnt()':       ['<F7>'],
+          \ 'PrtExit()':            ['<c-l>', '<esc>', '<c-c>', '<c-g>'],
+          \ }
+
+Plug 'scrooloose/nerdcommenter'
+let g:NERDCompactSexyComs = 0
+let g:NERDSpaceDelims = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCustomDelimiters = { 'reason': { 'left': '/*','right': '*/', 'nested': 1 } }
