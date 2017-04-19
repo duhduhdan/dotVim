@@ -1,4 +1,4 @@
-## 」(￣▽￣」) Vimshi 」(￣▽￣」) ##
+## 」(￣▽￣」) ＶＩＭＳＨＩ」(￣▽￣」) ##
 
 Growing collection of my vim setup
 
