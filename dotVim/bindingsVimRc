@@ -17,17 +17,21 @@ nnoremap <leader>/ <Plug>NERDCommenterToggle
 nnoremap ; :
 
 " Tab through splits
-nnoremap <Tab> <C-w><C-w>
+set winwidth=1
+nmap <Tab> <c-w><c-w>
 
-inoremap <C-Tab> <Esc> gt
-inoremap <C-S-Tab> <Esc> gT
-nnoremap <C-Tab> <Esc> gt
-nnoremap <C-S-Tab> <Esc> gT
+imap <C-Right> <Esc>:tabnext<Cr>
+imap <C-Left> <Esc>:tabprevious<Cr>
+nmap <C-Right> :tabnext<Cr>
+nmap <C-Left> :tabprevious<Cr>
 
-imap <C-Right> <Esc>:vertical resize +10<Cr>
-imap <C-Left> <Esc>:vertical resize -10<Cr>
-nmap <C-Right> :vertical resize +10<Cr>
-nmap <C-Left> :vertical resize -10<Cr>
+imap <C-S-Right> <Esc>:vertical resize +10<Cr>
+imap <C-S-Left> <Esc>:vertical resize -10<Cr>
+nmap <C-S-Right> :vertical resize +10<Cr>
+nmap <C-S-Left> :vertical resize -10<Cr>
+
+imap <C-w> <Esc>:close<Cr>
+nmap <C-w> :close<Cr>
 
 inoremap <leader>k <Esc>:NERDTreeTabsToggle<Cr><C-w><C-w><C-w><C-p>
 vnoremap <leader>k <Esc>:NERDTreeTabsToggle<Cr><C-w><C-w><C-w><C-p>

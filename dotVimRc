@@ -14,11 +14,11 @@ set shiftwidth=2
 set softtabstop=2
 set nospell
 set lazyredraw
+set nocursorline
 
 set ic
 set scs
 set inf
-set re=1
 
 set wildmode=full
 set wildignore+=*.DS_Store
