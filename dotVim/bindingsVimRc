@@ -19,13 +19,10 @@ nnoremap ; :
 " Tab through splits
 nnoremap <Tab> <C-w><C-w>
 
-" Make arrow keys great again
-imap <Right> <Esc>gt<Cr>
-imap <Left> <Esc>gT<Cr>
-vmap <Right> <Esc>gt<Cr>
-vmap <Left> <Esc>gT<Cr>
-nmap <Right> gt<Cr>
-nmap <Left> gT<Cr>
+inoremap <C-Tab> <Esc> gt
+inoremap <C-S-Tab> <Esc> gT
+nnoremap <C-Tab> <Esc> gt
+nnoremap <C-S-Tab> <Esc> gT
 
 imap <C-Right> <Esc>:vertical resize +10<Cr>
 imap <C-Left> <Esc>:vertical resize -10<Cr>

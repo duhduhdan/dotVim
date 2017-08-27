@@ -1,5 +1,3 @@
-set nocompatible
-
 call plug#begin('~/.vim/plugs')
 
 set relativenumber
@@ -8,17 +6,19 @@ set noswapfile
 set nowritebackup
 set nobackup
 
-syntax on
+" syntax on
 set virtualedit=block
 set tabstop=2
 set expandtab
 set shiftwidth=2 
 set softtabstop=2
 set nospell
+set lazyredraw
 
 set ic
 set scs
 set inf
+set re=1
 
 set wildmode=full
 set wildignore+=*.DS_Store
@@ -30,7 +30,6 @@ set wildignore+=*/.yarn
 set sm!
 
 set visualbell
-set t_vb=
 
 set nofoldenable
 
