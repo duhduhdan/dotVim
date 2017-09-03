@@ -1,4 +1,4 @@
-let mapleader = "\<Space>"
+nmap <space> <leader>
 
 " Ack binding, don't jump to first result automatically
 nnoremap <Leader>b :Ack!<Space>
