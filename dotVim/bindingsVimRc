@@ -18,20 +18,20 @@ nnoremap ; :
 
 " Tab through splits
 set winwidth=1
-nmap <Tab> <c-w><c-w>
+nnoremap <Tab> <c-w><c-w>
 
-imap <C-Right> <Esc>:tabnext<Cr>
-imap <C-Left> <Esc>:tabprevious<Cr>
-nmap <C-Right> :tabnext<Cr>
-nmap <C-Left> :tabprevious<Cr>
+inoremap <C-Right> <Esc>:tabnext<Cr>
+inoremap <C-Left> <Esc>:tabprevious<Cr>
+nnoremap <C-Right> :tabnext<Cr>
+nnoremap <C-Left> :tabprevious<Cr>
 
-imap <C-S-Right> <Esc>:vertical resize +10<Cr>
-imap <C-S-Left> <Esc>:vertical resize -10<Cr>
-nmap <C-S-Right> :vertical resize +10<Cr>
-nmap <C-S-Left> :vertical resize -10<Cr>
+inoremap <C-S-Right> <Esc>:vertical resize +10<Cr>
+inoremap <C-S-Left> <Esc>:vertical resize -10<Cr>
+nnoremap <C-S-Right> :vertical resize +10<Cr>
+nnoremap <C-S-Left> :vertical resize -10<Cr>
 
-imap <C-w> <Esc>:close<Cr>
-nmap <C-w> :close<Cr>
+inoremap <C-w> <Esc>:close<Cr>
+nnoremap <C-w> :close<Cr>
 
 inoremap <leader>k <Esc>:NERDTreeTabsToggle<Cr><C-w><C-w><C-w><C-p>
 vnoremap <leader>k <Esc>:NERDTreeTabsToggle<Cr><C-w><C-w><C-w><C-p>
